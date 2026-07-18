@@ -1,122 +1,171 @@
 # 🛍️ Customer Behaviour Data Analysis
 
-A complete end-to-end Data Analytics project that demonstrates the entire analytics workflow—from data cleaning in Python, database management in MySQL, SQL analysis, and finally building an interactive Power BI dashboard.
+An end-to-end Data Analytics project that analyzes customer purchasing behavior using **Python, MySQL, SQL, and Power BI**. The project demonstrates the complete analytics workflow—from data cleaning and preprocessing to database querying and interactive dashboard development.
 
 ---
 
-# 📌 Project Overview
+## 📌 Project Overview
 
-The objective of this project was to analyze customer purchasing behaviour and identify meaningful business insights that can support data-driven decision making.
+The objective of this project is to analyze customer purchasing patterns and generate actionable business insights by:
 
-The project follows a real-world analytics pipeline:
-
-Raw Dataset → Python Data Cleaning → MySQL Database → SQL Analysis → Power BI Dashboard
-
----
-
-# 🛠️ Tools & Technologies
-
-- Python
-- Pandas
-- Jupyter Notebook
-- MySQL Workbench
-- SQL
-- Power BI
+- Cleaning and preprocessing raw customer data using Python.
+- Importing the cleaned dataset into MySQL.
+- Performing exploratory and business-focused SQL analysis.
+- Building an interactive Power BI dashboard for visualization.
 
 ---
 
-# 📂 Project Workflow
+## 🛠️ Tech Stack
 
-## 1. Data Cleaning (Python)
+- **Python**
+  - Pandas
+  - NumPy
+  - SQLAlchemy
+- **Jupyter Notebook**
+- **MySQL Workbench**
+- **SQL**
+- **Power BI**
+- **Git & GitHub**
 
-The dataset was cleaned using Pandas by:
+---
 
-- Handling missing values
-- Removing duplicates
-- Standardizing categorical values
-- Correcting data types
-- Preparing the dataset for SQL analysis
+# 📂 Project Structure
+
+```
+Customer-Behaviour-Data-Analysis
+│
+├── Customer_Behaviour_Analysis.ipynb
+├── customer_data.csv
+├── Customer_Behaviour_Dashboard.pbix
+├── SQL_Queries.sql
+├── README.md
+│
+└── Project_4_Screenshots
+      ├── py1.png
+      ├── py2.png
+      ├── ...
+      ├── py8.png
+      ├── sql1.png
+      ├── sql2.png
+      ├── ...
+      ├── sql10.png
+      └── power_bi.png
+```
+
+---
+
+# 🧹 Data Cleaning (Python)
+
+The dataset was cleaned using **Pandas** before loading it into MySQL.
+
+### Cleaning Steps
+
+- Imported dataset
+- Checked missing values
+- Removed duplicate records
+- Filled missing Review Ratings using category median
+- Standardized column names
+- Corrected data types
+- Exported cleaned dataset
 
 ### Python Screenshots
 
-| Step | Screenshot |
-|------|------------|
-| Data Cleaning | ![](Project_4_Screenshots/py1.png) |
-| Missing Value Handling | ![](Project_4_Screenshots/py2.png) |
-| Data Transformation | ![](Project_4_Screenshots/py3.png) |
-| Cleaning Process | ![](Project_4_Screenshots/py4.png) |
-| Feature Engineering | ![](Project_4_Screenshots/py5.png) |
-| Data Validation | ![](Project_4_Screenshots/py6.png) |
-| Final Dataset | ![](Project_4_Screenshots/py7.png) |
-| Export Cleaned CSV | ![](Project_4_Screenshots/py8.png) |
+#### Import Dataset
+
+![](Project_4_Screenshots/py1.png)
+
+#### Data Cleaning
+
+![](Project_4_Screenshots/py2.png)
+
+#### Missing Value Treatment
+
+![](Project_4_Screenshots/py3.png)
+
+#### Feature Engineering
+
+![](Project_4_Screenshots/py4.png)
+
+#### Data Validation
+
+![](Project_4_Screenshots/py5.png)
+
+#### Export Cleaned Dataset
+
+![](Project_4_Screenshots/py6.png)
+
+#### Final Dataset
+
+![](Project_4_Screenshots/py7.png)
+
+#### Ready for SQL
+
+![](Project_4_Screenshots/py8.png)
 
 ---
 
-## 2. Database Creation (MySQL)
+# 🗄️ Database (MySQL)
 
-The cleaned CSV was imported into MySQL Workbench for further analysis.
+The cleaned CSV was imported into MySQL Workbench where SQL queries were performed to answer business questions.
 
 ---
 
-## 3. SQL Analysis
+## SQL Analysis
 
-The following business questions were answered using SQL.
+The following analyses were performed:
 
-### Revenue by Gender
+- Revenue by Gender
+- High Value Customers using Discounts
+- Top Rated Products
+- Average Purchase Amount by Shipping Type
+- Subscription Status Analysis
+- Products with Highest Discount Usage
+- Customer Segmentation
+- Top Selling Products within Categories
+- Repeat Buyers
+- Revenue Contribution by Age Group
+
+---
+
+## SQL Query Screenshots
+
+### Query 1
 
 ![](Project_4_Screenshots/sql1.png)
 
----
-
-### Customers Receiving Discounts with Above Average Purchases
+### Query 2
 
 ![](Project_4_Screenshots/sql2.png)
 
----
-
-### Top Rated Products
+### Query 3
 
 ![](Project_4_Screenshots/sql3.png)
 
----
-
-### Average Purchase Amount by Shipping Type
+### Query 4
 
 ![](Project_4_Screenshots/sql4.png)
 
----
-
-### Subscription Analysis
+### Query 5
 
 ![](Project_4_Screenshots/sql5.png)
 
----
-
-### Discount Rate by Product
+### Query 6
 
 ![](Project_4_Screenshots/sql6.png)
 
----
-
-### Customer Segmentation
+### Query 7
 
 ![](Project_4_Screenshots/sql7.png)
 
----
-
-### Top Selling Products by Category
+### Query 8
 
 ![](Project_4_Screenshots/sql8.png)
 
----
-
-### Repeat Buyers
+### Query 9
 
 ![](Project_4_Screenshots/sql9.png)
 
----
-
-### Revenue Contribution by Age Group
+### Query 10
 
 ![](Project_4_Screenshots/sql10.png)
 
@@ -124,20 +173,19 @@ The following business questions were answered using SQL.
 
 # 📊 Power BI Dashboard
 
-The final dashboard provides an interactive overview of customer behaviour.
+The final dashboard provides an interactive overview of customer purchasing behavior.
 
-Features include:
+### Features
 
 - KPI Cards
 - Revenue Analysis
-- Customer Distribution
-- Sales by Category
-- Revenue by Age Group
-- Sales by Age Group
-- Interactive Filters
+- Category Performance
+- Age Group Analysis
 - Subscription Analysis
+- Interactive Filters
+- Customer Distribution
 
-## Dashboard Preview
+### Dashboard
 
 ![](Project_4_Screenshots/power_bi.png)
 
@@ -145,52 +193,31 @@ Features include:
 
 # 📈 Key Insights
 
-- Clothing generated the highest revenue.
-- Adults contributed the highest total revenue.
-- Average Purchase Amount: **$59.76**
-- Average Review Rating: **3.75**
-- Total Customers: **3,900**
-- Most customers were non-subscribers.
-- Customer purchasing behaviour varied significantly across categories.
-
----
-
-# 📁 Repository Structure
-
-```text
-Customer-Behaviour-Data-Analysis/
-│
-├── Customer_Behaviour_Analysis.pbix
-├── customer_data.csv
-├── Customer_Behaviour_Project_Documentation.docx
-├── README.md
-└── Project_4_Screenshots/
-    ├── power_bi.png
-    ├── py1.png
-    ├── ...
-    ├── py8.png
-    ├── sql1.png
-    ├── ...
-    └── sql10.png
-```
+- Clothing generated the highest overall revenue.
+- Adult customers contributed the largest share of revenue.
+- Customers with subscriptions generated higher total revenue.
+- Average purchase amount was **$59.76**.
+- Average customer review rating was **3.75**.
+- Revenue distribution varied significantly across product categories.
 
 ---
 
 # 🚀 Skills Demonstrated
 
-- Data Cleaning
-- Data Wrangling
-- Python Programming
+- Data Cleaning with Pandas
+- Feature Engineering
 - SQL Query Writing
-- MySQL Database Management
+- Common Table Expressions (CTEs)
+- Window Functions
 - Business Analysis
+- Dashboard Design
 - Data Visualization
-- Dashboard Development
 - Power BI
+- GitHub Documentation
 
 ---
 
-# 👨‍💻 Author
+# 👤 Author
 
 **Syed Sami Ullah**
 
@@ -198,3 +225,5 @@ Customer-Behaviour-Data-Analysis/
 - LinkedIn: www.linkedin.com/in/syed-sami-ullah-9232602a6
 
 ---
+
+⭐ If you found this project helpful, consider giving it a star!
