@@ -74,27 +74,27 @@ The dataset was cleaned using **Pandas** before loading it into MySQL.
 
 ![](Project_4_Screenshots/py1.png)
 
-#### Data Cleaning
+#### Checking the Dataset
 
 ![](Project_4_Screenshots/py2.png)
 
-#### Missing Value Treatment
+#### Checking for Missing Values
 
 ![](Project_4_Screenshots/py3.png)
 
-#### Feature Engineering
+#### Missing values treatment
 
 ![](Project_4_Screenshots/py4.png)
 
-#### Data Validation
+#### Changing column names for easyness
 
 ![](Project_4_Screenshots/py5.png)
 
-#### Export Cleaned Dataset
+#### Creating new column
 
 ![](Project_4_Screenshots/py6.png)
 
-#### Final Dataset
+#### Creating new column
 
 ![](Project_4_Screenshots/py7.png)
 
